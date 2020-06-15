@@ -34,6 +34,11 @@ Go the level where you can manage.py file is in the repo(which is the base level
 `python manage.py runserver`<br>
 This is will start the application in development envrionment<br>
 ### Open index.html from frontend folder in repo on any browser and you should be able to see this UI<br>
+---
+
+![](Advarisk_UI.PNG)
+
+---
 
 ### 5
 Executing custom management command<br> 
