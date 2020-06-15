@@ -8,8 +8,8 @@ Clone the repo using the command<br>
 on your local system<br>
 
 ### 2 
- Due to shortage of time, I haven't able to dockerize the repo,<br>
-but I have include the required Dockerfile and docker-compose.yml.<br> 
+Due to shortage of time, I haven't able to dockerize the repo,<br>
+but I have included the required Dockerfile and docker-compose.yml.<br> 
 With further commits the application can be dockerized.<br>
 ### Current way to execute code
 Create a folder for setting up virtual environment at the manage.py level<br>
@@ -19,8 +19,8 @@ Setup virtual environment inside venv/ folder<br>
 For this step python3 has to pre-installed on your system<br>
 This will create a venv/ virutal environment folder at the repo base<br>
 
-For activating the virtual env, navigate to Scripts/bin(depending on OS) folder of the venv directory and use the command<br>
-`source {Scripts/bin}/activate`<br>
+For activating the virtual env, navigate to Scripts|bin(depending on OS) folder of the venv directory and use the command<br>
+`source {Scripts|bin}/activate`<br>
 You'll able to see `(venv)` in your shell, which is an indicator that virtual environment is active<br>
 
 ### 3 
@@ -48,5 +48,5 @@ From the file database will get populated<br>
 
 ### 6
 Executing tests<br>
-For executing tests, use the following command at the 'tests' directory level inside the app<br>
-`./manage.py test bike_app.tests.{test_filename}`<br>
+For executing tests, use the following command at the 'backend' directory level inside the repo<br>
+`./manage.py test backend.tests.{test_filename}`<br>
