@@ -15,5 +15,3 @@ RUN pip3 install -r requirements.txt
 
 RUN npm install -g http-server
 
-CMD ["http-server", "-s"]
-
