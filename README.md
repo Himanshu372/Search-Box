@@ -8,20 +8,11 @@ Clone the repo using the command<br>
 on your local system<br>
 
 ### 2 
-Due to shortage of time, I haven't able to dockerize the repo,<br>
-but I have included the required Dockerfile and docker-compose.yml.<br> 
-With further commits the application can be dockerized.<br>
-### Current way to execute code
-Create a folder for setting up virtual environment at the manage.py level<br>
-`mkdir venv`<br>
-Setup virtual environment inside venv/ folder<br>
-`python3 -m venv /path/to/venv repo`<br>
-For this step python3 has to pre-installed on your system<br>
-This will create a venv/ virutal environment folder at the repo base<br>
-
-For activating the virtual env, navigate to Scripts|bin(depending on OS) folder of the venv directory and use the command<br>
-`source {Scripts|bin}/activate`<br>
-You'll able to see `(venv)` in your shell, which is an indicator that virtual environment is active<br>
+The application is contaierized.<br>
+After cloning the repo, run the following command at the docker-compose-local.yml file level<br>
+`docker-compose -f docker-compose-local.yml up web`<br>
+This will start http-server and Django server at 8080 and 8000 ports respectively<br>
+By accessing localhost:8080 on host machine, UI can be seen.<br>
 
 ### 3 
 Downloading required packages from requirements.txt<br>
