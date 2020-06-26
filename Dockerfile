@@ -1,12 +1,9 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
-RUN apt-get update
+RUN apt-get update && apt-get install -y \
+nodejs npm python3 python3-pip
 
-RUN apt install node
-
-RUN apt install npm
-
-RUN apt install python:3
+RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN mkdir /code_dir
 
@@ -14,7 +11,7 @@ WORKDIR /code_dir
 
 COPY . /code_dir/
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 RUN npm install -g http-server
 
