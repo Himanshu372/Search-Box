@@ -1,10 +1,18 @@
 version: '3'
 
 services:
+  frontend:
+    build: .
+    command: http-server -s
+    ports:
+      - "8080:8080"
+
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code_dir
+    depends_on:
+      - frontend
     ports:
       - "8000:8000"
