@@ -12,13 +12,6 @@ class Reviews(models.Model):
     summary = models.TextField(null=False)
     text = models.TextField(null=False)
 
-    # class Meta:
-    #     indexes = [
-    #         models.Index(fields=['product_id'], name='product_id_idx'),
-    #         models.Index(fields=['reviewer_name'], name='reviewer_name_idx'),
-    #
-    #     ]
-
     @classmethod
     def create(cls, obj_list):
         product_id, user_id, reviewer_name, helpfulness, score, time, summary, text = obj_list
